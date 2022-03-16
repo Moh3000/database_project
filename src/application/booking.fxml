@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.booking">
+   <children>
+      <ImageView fitHeight="425.0" fitWidth="612.0" layoutX="-5.0" layoutY="-17.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/bok.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="120.0" text="make your booking">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="111.0" text="date of dropoff">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="111.0" text="date of pickup">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="153.0" text="Year" />
+      <Label layoutX="38.0" layoutY="232.0" text="Day" />
+      <Label layoutX="38.0" layoutY="196.0" text="Month" />
+      <Label layoutX="308.0" layoutY="232.0" text="Day" />
+      <Label layoutX="308.0" layoutY="196.0" text="Month" />
+      <Label layoutX="308.0" layoutY="155.0" text="Year" />
+      <TextField fx:id="yp" layoutX="93.0" layoutY="149.0" />
+      <TextField fx:id="dd" layoutX="366.0" layoutY="227.0" />
+      <TextField fx:id="md" layoutX="366.0" layoutY="191.0" />
+      <TextField fx:id="yd" layoutX="366.0" layoutY="150.0" />
+      <TextField fx:id="dp" layoutX="93.0" layoutY="227.0" />
+      <TextField fx:id="mp" layoutX="93.0" layoutY="191.0" />
+      <Label layoutX="38.0" layoutY="321.0" text="Do you want a driver?" />
+      <Label fx:id="errora" layoutX="73.0" layoutY="273.0" text="No driver or car available on these dates Please enter a new date" textFill="#da1111" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <RadioButton fx:id="yes" layoutX="215.0" layoutY="321.0" mnemonicParsing="false" text="yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="ss" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="no" layoutX="301.0" layoutY="321.0" mnemonicParsing="false" selected="true" text="no" toggleGroup="$ss" />
+      <Label fx:id="errorb" layoutX="301.0" layoutY="359.0" text="empty field or wrong data entry" textFill="#b20b0b">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="we" layoutX="136.0" layoutY="53.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="yid" layoutX="23.0" layoutY="84.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backb" layoutX="30.0" layoutY="355.0" mnemonicParsing="false" onAction="#back_b" styleClass="btn" text="Back">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/back.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="done" layoutX="183.0" layoutY="357.0" mnemonicParsing="false" onAction="#done_b" text="done" />
+   </children>
+</Pane>

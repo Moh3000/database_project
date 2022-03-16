@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.logemp_c">
+   <children>
+      <ImageView fitHeight="410.0" fitWidth="600.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Pictures/emp.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logemp" layoutX="239.0" layoutY="281.0" mnemonicParsing="false" onAction="#logemp_c" text="log in" textFill="#242524">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="235.0" layoutY="198.0" promptText="ID" />
+      <Label layoutX="147.0" layoutY="241.0" text="password" textFill="#070707">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="138.0" layoutY="-12.0" prefHeight="53.0" prefWidth="355.0" text="Welcome to our Car company" textAlignment="CENTER" textFill="#053605">
+         <font>
+            <Font name="Arial Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="235.0" layoutY="239.0" promptText="password" />
+      <Label fx:id="wid" layoutX="187.0" layoutY="219.0" text="this ID does not exist" textFill="#bc0909" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="wpass" layoutX="203.0" layoutY="258.0" text="The password is wrong" textFill="#bc0909" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="126.0" layoutY="200.0" text="EmployeeID" textFill="#171717">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="42.0" layoutY="351.0" mnemonicParsing="false" onAction="#back_k" styleClass="btn" text="Back">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Pictures/back.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</Pane>

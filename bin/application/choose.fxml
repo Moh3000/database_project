@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Choosecontrol">
+   <children>
+      <TableView fx:id="table" layoutX="1.0" layoutY="33.0" prefHeight="291.0" prefWidth="829.0">
+        <columns>
+          <TableColumn fx:id="vin" prefWidth="75.0" text="VIN" />
+          <TableColumn fx:id="manufacturer" prefWidth="75.0" text="Manufacturer" />
+            <TableColumn fx:id="model" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="year" prefWidth="75.0" text="Year" />
+            <TableColumn fx:id="cost_day" prefWidth="75.0" text="Cost/Day" />
+            <TableColumn fx:id="fuel" prefWidth="75.0" text="Fuel Efficiency" />
+            <TableColumn fx:id="deposit" prefWidth="75.0" text="sec. deposit" />
+            <TableColumn fx:id="gearbox" prefWidth="75.0" text="Gearbox" />
+            <TableColumn fx:id="size" prefWidth="75.0" text="Size" />
+            <TableColumn fx:id="occupants" prefWidth="75.0" text="Occupants" />
+            <TableColumn fx:id="color" prefWidth="75.0" text="Color" />
+        </columns>
+      </TableView>
+      <Label layoutX="51.0" layoutY="1.0" prefHeight="31.0" prefWidth="125.0" text="Choose a car" textFill="#400000">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selections" layoutX="52.0" layoutY="333.0" onAction="#comboChanged" prefHeight="31.0" prefWidth="285.0" promptText="Select the VIN of the car you want" />
+      <Button fx:id="conf" layoutX="728.0" layoutY="333.0" mnemonicParsing="false" onAction="#buttonPressed" text="Confirm" />
+      <Button fx:id="back" layoutX="616.0" layoutY="333.0" mnemonicParsing="false" onAction="#backPressed" text="Back" />
+   </children>
+</AnchorPane>
